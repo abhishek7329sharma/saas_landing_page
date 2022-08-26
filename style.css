@@ -172,3 +172,75 @@ img[alt="code-icons"] {
   font-size: 14px;
   margin-top: 20px;
 }
+
+.handburger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 90px;
+    padding-top: 50px;
+    padding-right: 57px;
+    background-color: #7030cc;
+  }
+
+  .first-panel {
+    padding: 0 90px;
+    display: flex;
+    color: #ffffff;
+    padding-top: 70px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-panel-left {
+    text-align: center;
+  }
+
+  .second-panel {
+    padding: 0 90px;
+    display: flex;
+    padding-top: 28px;
+    align-items: center;
+    color: #1d1c1c;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  .container-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+    flex-wrap: wrap;
+    gap: 83px;
+    margin-bottom: 30px;
+  }
+  .first-panel-left > p {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 604px) {
+  .first-panel-left > h1 {
+    font-size: 35px;
+  }
+
+  .handburger {
+    display: inline-flex;
+    fill: #fff;
+    margin-left: 20px;
+  }
+  .items {
+    display: none;
+  }
+}
